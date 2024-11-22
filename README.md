@@ -40,7 +40,7 @@ Desarrollar un sistema basado en **TinyML** para reconocer patógenos en plantas
 - Optimización: Ajuste de hiperparámetros para balancear **precisión** y **velocidad**.  
 
 ### 3️⃣ **Optimización para Edge Computing**  
-📉 Conversión del modelo a **TensorFlow Lite** con cuantización para reducir tamaño y mejorar la inferencia en la Raspberry Pi.  
+📉 Conversión del modelo a **TensorFlow Lite** con cuantización para reducir tamaño y mejorar la inferencia en la Raspberry Pi, el archivo que se descarga de colab es el archivo llamado .  
 
 ### 4️⃣ **Configuración del Hardware**  
 - **Hardware:**  
@@ -81,5 +81,4 @@ El sistema demuestra su eficacia en condiciones reales, apoyando la **agricultur
 - Actuadores: LEDs, buzzer, servomotor, relés.  
 
 ### 📦 **Dependencias:**  
-```bash
-pip install tensorflow opencv-python-headless gpiozero
+Para poder correr este programa
