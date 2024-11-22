@@ -9,9 +9,7 @@ Este proyecto desarrolla un sistema **TinyML** para el reconocimiento de patóge
 
 ## 🎯 **Objetivos**  
 ### 🏆 **Objetivo General**  
-Desarrollar un sistema basado en **TinyML** para reconocer patógenos en plantas con una **Raspberry Pi 4** y una cámara USB, facilitando decisiones rápidas en **agricultura sostenible**. Las imágenes con las que se realizó el entrenamiento de la red de encuentran en el enlace de abajo.
-
-[🔗Plant Pathogens Dataset - Kaggle](https://www.kaggle.com/datasets/sujallimje/plant-pathogens) 
+Desarrollar un sistema basado en **TinyML** para reconocer patógenos en plantas con una **Raspberry Pi 4** y una cámara USB, facilitando decisiones rápidas en **agricultura sostenible**. 
 
 ### ✅ **Objetivos Específicos**  
 1. 🧠 Entrenar un modelo **CNN** preentrenado (**MobileNetV2**) en Google Colab.  
@@ -29,6 +27,8 @@ Desarrollar un sistema basado en **TinyML** para reconocer patógenos en plantas
 - 🌿 Healthy  
 - 🦠 Bacteria  
 - 🍄 Fungus  
+> :memo: **Nota:** El dataset con el que se realizó el entrenamiento y validación de la red se encuentra en el enlace de abajo. Este dataset originalmente cuenta con 5 clases con alrededor de 35k de imágenes por clase, sin embargo por temas de memoria en colab, se eliminaron dos clases y solo se tomaron 10k de imágenes por clase (8k para entrenamiento y 2k para validación).
+[🔗Plant Pathogens Dataset - Kaggle](https://www.kaggle.com/datasets/sujallimje/plant-pathogens)
 
 🔄 **Procesamiento**:  
 - Normalización de imágenes a `128x128 px`.  
@@ -46,16 +46,16 @@ Desarrollar un sistema basado en **TinyML** para reconocer patógenos en plantas
 - **Hardware:**  
   - 🔴 **Raspberry Pi 4**  
   - 📷 **Cámara USB**  
-  - 🛠️ Actuadores: LED, buzzer, servomotor, relés.  
+  - 🛠️ Actuadores: LEDs, buzzer, servomotor, relés.  
 
 - **Software:**  
   - 📦 **OpenCV** para captura y procesamiento de imágenes.  
   - 📜 Scripts en Python para inferencias y control de actuadores.  
 
 ### 5️⃣ **Sistema de Alertas**  
-- 🚦 **Healthy:** LED verde.  
-- 🚨 **Bacteria:** Buzzer + LED rojo.  
-- 🚿 **Fungus:** Activación de servomotor.  
+- 🌿 **Healthy:** LED verde.  
+- 🦠 **Bacteria:** Buzzer + LED rojo.  
+- 🍄 **Fungus:** Activación de servomotor + LED rojo.  
 
 ### 6️⃣ **Validación en Campo**  
 🔍 Evaluación en **entornos reales**:  
@@ -67,12 +67,7 @@ Desarrollar un sistema basado en **TinyML** para reconocer patógenos en plantas
 
 ## 📊 **Resultados**  
 ### ✔️ **Clasificación Exitosa:**  
-El sistema distingue entre `Healthy`, `Bacteria`, y `Fungus` con alta precisión.  
-
-### 🔔 **Alertas Visuales y Sonoras:**  
-- 🌿 **Healthy:** LED verde.  
-- 🦠 **Bacteria:** Buzzer + LED rojo.  
-- 🍄 **Fungus:** Activación de servomotor.  
+El sistema distingue entre `Healthy`, `Bacteria`, y `Fungus` con buena precisión.    
 
 ### 💡 **Implementación Real en Campo:**  
 El sistema demuestra su eficacia en condiciones reales, apoyando la **agricultura sostenible**.  
@@ -82,7 +77,7 @@ El sistema demuestra su eficacia en condiciones reales, apoyando la **agricultur
 ## 🔧 **Requisitos Técnicos**  
 ### 🖥️ **Hardware:**  
 - **Raspberry Pi 4** (o superior).  
-- Cámara USB compatible.  
+- Cámara USB.  
 - Actuadores: LEDs, buzzer, servomotor, relés.  
 
 ### 📦 **Dependencias:**  
