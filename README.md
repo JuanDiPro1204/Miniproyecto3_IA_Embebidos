@@ -40,7 +40,7 @@ Desarrollar un sistema basado en **TinyML** para reconocer patógenos en plantas
 - Optimización: Ajuste de hiperparámetros para balancear **precisión** y **velocidad**.  
 
 ### 3️⃣ **Optimización para Edge Computing**  
-📉 Conversión del modelo a **TensorFlow Lite** con cuantización para reducir tamaño y mejorar la inferencia en la Raspberry Pi, el archivo que se descarga de colab es el archivo llamado .  
+📉 Conversión del modelo a **TensorFlow Lite** con cuantización para reducir tamaño y mejorar la inferencia en la Raspberry Pi, el archivo que se descarga de colab es el archivo llamado miniproyecto3_model.tflite que se sube en una carpeta que se debe crear en el escritorio de la rapsberry.  
 
 ### 4️⃣ **Configuración del Hardware**  
 - **Hardware:**  
@@ -81,4 +81,4 @@ El sistema demuestra su eficacia en condiciones reales, apoyando la **agricultur
 - Actuadores: LEDs, buzzer, servomotor, relés.  
 
 ### 📦 **Dependencias:**  
-Para poder correr este programa
+Para poder correr este programa, en la carpeta anteriormente creada en el escritorio de la rapsberry se pega también el archivo proyectofinaltflite.py de este repositorio. Además de esto, en una terminal de la rapsberry se debe pegar cada una de las líneas del archivo Requirements.txt para poder descargar las dependencias necesarias para correr el proyecto. Una vez hecho esto, se debe ingresar a la carpeta creada desde la terminal y escribir `python proyectofinaltflite.py` y esto ejecuratá el script que abrirá la cámara para poder tomar la foto con la tecla `space` del teclado y esto realizará la clasificación y activará el actuador correspondiente.
